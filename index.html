@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -19,7 +25,9 @@
         <div class="searchbar" id="search">
             <h2>Search for a City:</h2>
             <input type="text" class="searchtext" placeholder="city">
+            <button class="search" id="searchbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
+        
         <div class="todayandfive" id="fullforecast">
           <div class="today" id="todayforecast">
             <h2>Today</h2>
@@ -29,7 +37,8 @@
             </div>
         </div>
       </div>
-    <script src="assets/js/script.js"></script>
+    
+      <script src="assets/js/script.js"></script>
     </main>
   </body>
 </html>
