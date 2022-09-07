@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/sun.png">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -11,7 +13,6 @@
     crossorigin="anonymous"
   />
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <header>
@@ -29,14 +30,22 @@
         </div>
         
         <div class="todayandfive" id="fullforecast">
-          <div class="today" id="todayforecast">
-            <h2>Today</h2>
-          </div>
-            <div class="fiveday" id="fivedayforecast">
-              <h2>Five Day</h2>
+          <h2>Todays Forecast</h2>
+            <div class="today" id="todayforecast">
             </div>
+            <h2>5-Day Forecast</h2>
+              <div class="fiveday" id="fivedayforecast">
+                  <!-- <div class="card" id="card1"></div>
+                  <div class="card" id="card2"></div>
+                  <div class="card" id="card3"></div>
+                  <div class="card" id="card4"></div>
+                  <div class="card" id="card5"></div> -->
+              </div>
         </div>
       </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     
       <script src="assets/js/script.js"></script>
     </main>
