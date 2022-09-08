@@ -51,12 +51,33 @@
 
 
 .card {
+  color: black;
+  margin: 10px;
+  width: 40%;
+  height: 80%;
+  border: 2px solid black;
+}
+
+.card h2, img {
+  margin-left: 20px;
+}
+
+.card5 {
   color: white;
   margin: 10px;
-  background-color: grey;
-  width: 18%;
-  height: 60%;
+  background-color: rgb(80, 80, 98);
+  width: 40%;
+  height: 80%;
   border-radius: 15px;
 }
 
+.bad {
+  background-color: red;
+  margin-right: 60%;
+}
+
+.good {
+  background-color: green;
+  margin-right: 60%;
+}
 

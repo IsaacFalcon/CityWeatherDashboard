@@ -3,11 +3,11 @@
 
 
 var key = "8f86eeff2c41d4e8294b54f7d4d495b9";
-var city = "Houston";
+var city = $(".searchtext").val();
 
 
 $("#searchbutton").on("click", function() {
-var searchValue = $(".searchtext").val()
+var searchValue = $(".searchtext").val();
   console.log(searchValue);
   geoCode(searchValue);
 });
@@ -32,12 +32,23 @@ function weatherToday(lat, lon) {
   .then(data => {
     console.log(data);
     var currentCard = $("<div>").addClass("card");
+    var currentCity = $("<h2>").val();
     var currentTemp = $("<h2>").text("temp: "+data.current.temp);
     var currentHum = $("<h2>").text("humidity: "+data.current.humidity);
+    var currentWind = $("<h2>").text("Wind: "+data.current.wind_speed);
+    var currentUv = $("<h2>").text("UV: "+data.current.uvi)
+      if(data.current.uvi >= 0 && data.current.uvi <= 5) {
+        currentUv.attr("class", "good");
+      } else {
+        currentUv.attr("class", "bad");
+      };
+      
     var icon = $("<img>").attr("src", "http://openweathermap.org/img/w/"+data.current.weather[0].icon+".png");
 
-    currentCard.append(icon, currentTemp, currentHum);
+    currentCard.append(currentCity, icon, currentTemp, currentHum, currentWind, currentUv);
     $("#todayforecast").append(currentCard);
+
+    
   })
 };
   
