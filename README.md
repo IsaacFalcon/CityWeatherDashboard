@@ -21,13 +21,18 @@
 
 ## Usage
 
-Link:
+Link: https://isaacfalcon.github.io/CityWeatherDashboard/
 
 ![alt Website Screenshot](./assets/images/sample.JPG)
+
 
 ## Credits
 
 https://developer.mozilla.org/en-US/
+
+https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/
+
+https://openweathermap.org/api/one-call-api
 
 
 
