@@ -26,7 +26,7 @@ function geoCode(cityValue) {
   };
   localStorage.setItem("searchhistory", JSON.stringify(lsArray));
   $("#todayforecast").append(cityValue).addClass("cityname");
-  fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&limit=1&appid=${key}`)
+  fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&limit=1&appid=${key}`)
   .then(response => response.json())
   .then(data => {
     console.log(data);
