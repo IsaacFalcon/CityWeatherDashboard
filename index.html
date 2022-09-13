@@ -15,6 +15,7 @@
     <title>Weather Dashboard</title>
 </head>
 
+<!-- main header title -->
 <header>
   <h1 class="maintitle">Weather Dashboard</h1>
 </header>
@@ -22,24 +23,23 @@
 
   <body>
     <main>
+
+      <!-- main container for search bar, search button, and dynamic history buttons -->
       <div class="container" id="maincontainer">
         <div class="searchbar" id="search">
             <h2>Search for a City:</h2>
-            <input type="text" class="searchtext" placeholder="city">
+            <input type="text" class="searchtext" placeholder="Houston">
             <button class="search" id="searchbutton"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <div id="searchhistory"></div>
         </div>
         
+        <!-- container for both my current and daily forecasts -->
         <div class="todayandfive" id="fullforecast">
           <h2>Todays Forecast</h2>
             <div class="today" id="todayforecast">
             </div>
-            <h2>5-Day Forecast</h2>
+            <h2>8-Day Forecast</h2>
               <div class="fiveday" id="fivedayforecast">
-                  <!-- <div class="card" id="card1"></div>
-                  <div class="card" id="card2"></div>
-                  <div class="card" id="card3"></div>
-                  <div class="card" id="card4"></div>
-                  <div class="card" id="card5"></div> -->
               </div>
         </div>
       </div>

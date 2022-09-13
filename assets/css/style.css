@@ -2,7 +2,7 @@
    font-family: Arial, Helvetica, sans-serif; 
 }
 
-
+/* styling for main header */
 .maintitle {
     background-color: rgb(72, 72, 218);
     color: white;
@@ -14,14 +14,16 @@
     font-size: 50px;
 }
 
-
+/* flex for each container */
 .container {
   height: 1000px;
   display: flex;
 }
 
-
+/* searchbar, today, daily card styling */
 .searchbar {
+  display: flex;
+  flex-direction: column;
     width: 20%;
     margin-left: 30px;
 }
@@ -58,7 +60,7 @@
   border: 2px solid black;
 }
 
-.card h2, img {
+.card p, img {
   margin-left: 20px;
 }
 
@@ -66,11 +68,16 @@
   color: white;
   margin: 10px;
   background-color: rgb(80, 80, 98);
-  width: 40%;
-  height: 80%;
+  width: 175px;
+  height: 60%;
   border-radius: 15px;
 }
 
+.card5 h3, img {
+  margin-left: 20px;
+}
+
+/* UV styling based on value */
 .bad {
   background-color: red;
   margin-right: 60%;
@@ -81,3 +88,27 @@
   margin-right: 60%;
 }
 
+/* styling for city name on top of card */
+.cityname {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* styling for search button and history buttons */
+.btnstyle {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(164, 162, 162);
+  margin-top: 10px;
+}
+
+.search {
+  margin-top: 10px;
+  height: 30px;
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+.gone {
+  display: none;
+}
